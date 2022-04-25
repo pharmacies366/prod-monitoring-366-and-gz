@@ -15,7 +15,7 @@ public class ProdMonitoringApiTest {
     public void checkSite366() {
         given().
                 when().get("https://366.ru/").
-                then().statusCode(400);
+                then().statusCode(200);
     }
 
     @DisplayName("Мониторинг доступности сайта https://gorzdrav.org/")
@@ -23,6 +23,6 @@ public class ProdMonitoringApiTest {
     public void checkSiteGz() {
         given().
                 when().get("https://gorzdrav.org/").
-                then().statusCode(400);
+                then().statusCode(200);
     }
 }
