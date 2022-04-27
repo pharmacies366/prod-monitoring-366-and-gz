@@ -25,6 +25,6 @@ public class ProdMonitoringApiTest {
         Response response = RestAssured.get("https://366.ru/");
         System.out.println(response.getStatusCode());
         int statusCode = response.statusCode();
-        Assert.assertEquals(statusCode, 200);
+        Assert.assertEquals(statusCode, 400);
     }
 }
