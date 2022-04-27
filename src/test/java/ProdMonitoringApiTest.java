@@ -1,4 +1,3 @@
-import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.RestAssured;
@@ -6,8 +5,7 @@ import io.restassured.response.Response;
 import org.junit.Assert;
 import org.junit.Test;
 
-@Feature(value = "Прод - Мониторинг")
-@Story("Проверка доступности сайта аптек Горздрав")
+@Story("Мониторинг")
 @DisplayName("Проверка доступности сайта аптек Горздрав")
 public class ProdMonitoringApiTest {
 
