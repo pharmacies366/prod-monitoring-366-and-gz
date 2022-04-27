@@ -7,23 +7,23 @@ import org.junit.Assert;
 import org.junit.Test;
 
 @Feature(value = "Прод - Мониторинг")
-@Story("Проверка доступности сайта аптек 366")
-@DisplayName("Проверка доступности сайта аптек 366")
+@Story("Проверка доступности сайта аптек Горздрав")
+@DisplayName("Проверка доступности сайта аптек Горздрав")
 public class ProdMonitoringApiTest {
 
-/*    @DisplayName("Мониторинг доступности сайта https://366.ru/")
+/*    @DisplayName("Мониторинг доступности сайта https://gorzdrav.org/")
     @Test
     public void checkSite366() {
         given().
-                when().get("https://366.ru/").
+                when().get("https://gorzdrav.org/").
                 then().statusCode(200);
     }
     */
 
-    @DisplayName("Мониторинг доступности сайта https://366.ru/")
+    @DisplayName("Мониторинг доступности сайта https://gorzdrav.org/")
     @Test
     public void checkSite366() {
-        Response response = RestAssured.get("https://366.ru/");
+        Response response = RestAssured.get("https://gorzdrav.org/");
         System.out.println(response.getStatusCode());
         int statusCode = response.statusCode();
         Assert.assertEquals(statusCode, 200);
