@@ -7,8 +7,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 @Feature(value = "Прод - Мониторинг")
-@Story("Проверка доступности сайтов аптек 366 и Горздрав")
-@DisplayName("Проверка доступности сайтов аптек 366 и Горздрав")
+@Story("Проверка доступности сайта аптек 366")
+@DisplayName("Проверка доступности сайта аптек 366")
 public class ProdMonitoringApiTest {
 
 /*    @DisplayName("Мониторинг доступности сайта https://366.ru/")
