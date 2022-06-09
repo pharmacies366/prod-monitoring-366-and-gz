@@ -20,7 +20,7 @@ public class ProdMonitoringApiTest {
 
     @DisplayName("Мониторинг доступности сайта https://gorzdrav.org/")
     @Test
-    public void checkSite366() {
+    public void checkSiteGorzdrav() {
         Response response = RestAssured.get("https://gorzdrav.org/");
         System.out.println(response.getStatusCode());
         int statusCode = response.statusCode();
